@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
-st.set_page_config(page_title="Classroom Air Quality", page_icon="🌬️", layout="wide")
+st.set_page_config(page_title="Air Quality monitor ", layout="wide")
 COLORS = {"Good": "#2ecc71", "Moderate": "#f1c40f", "Poor": "#e74c3c"}
 FEATURES = ["gas", "temperature", "humidity"]
 
