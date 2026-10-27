@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 
-st.set_page_config(page_title="Air Quality monitor ", layout="wide")
+st.set_page_config(page_title="Classroom Air Quality", page_icon="🌬️", layout="wide")
 COLORS = {"Good": "#2ecc71", "Moderate": "#f1c40f", "Poor": "#e74c3c"}
 FEATURES = ["gas", "temperature", "humidity"]
 
@@ -53,7 +53,7 @@ def fetch_cloud(channel, key, n=100):
 
 
 model = load_model()
-st.title("🌬️ Classroom Air-Quality Monitor (ML)")
+st.title(" Air-Quality Monitor (ML)")
 if model is None:
     st.error("Model not found. Run the notebook first to create air_quality_model.joblib")
     st.stop()
